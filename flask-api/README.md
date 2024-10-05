@@ -12,7 +12,6 @@ Pre nego što nastavite, uverite se da ste pokrenuli XAMPP i da je **MySQL** ser
 
 Prvo, klonirajte ovaj projekat na vaš računar:
 
-```bash
 git clone <link-do-repozitorijuma>
 cd <ime-repozitorijuma>
 
