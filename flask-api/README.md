@@ -10,35 +10,38 @@ Pre nego što nastavite, uverite se da ste pokrenuli XAMPP i da je **MySQL** ser
 
 ### 2. Kloniranje Projekta
 
-Prvo, klonirajte ovaj projekat na vaš računar:
+Prvo, klonirajte ovaj projekat na vaš računar:  
 
+  ```sh
 git clone <link-do-repozitorijuma>
 cd <ime-repozitorijuma>
+```
 
 ### 3. Instalacija zavisnosti
 
 Pokrenite u terminalu sledeće komande:
 
-pip install Flask
-pip install mysql-connector-python
-pip install werkzeug
-pip install flask-jwt-extended
-
-
+  ```sh
+pip install Flask  
+pip install mysql-connector-python  
+pip install werkzeug  
+pip install flask-jwt-extended 
+```
+ 
 ### 4. Import baze podataka
 
-Pokrenite phpMyAdmin a liknite na http://localhost/phpmyadmin, i kliknite na Import.
-Odaberite fajl evidencija_studenata.sql.
-Kliknite na Go.
+Pokrenite phpMyAdmin a liknite na http://localhost/phpmyadmin, i kliknite na Import.  
+Odaberite fajl evidencija_studenata.sql.  
+Kliknite na Go.  
 
 ### 5. Login podaci
 
-Za pristup API-ju:
+Za pristup API-ju:  
+  
+Profesor:  
+Email: test@test.com  
+Lozinka: password  
 
-Profesor:
-Email: test@test.com
-Lozinka: password
-
-Administrator:
-Email: test2@test.com
-Lozinka: password
+Administrator:  
+Email: test2@test.com  
+Lozinka: password  
