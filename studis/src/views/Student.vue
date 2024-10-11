@@ -23,8 +23,7 @@ const fetchStudent = async () => {
     predmeti.value = response.data.predmeti;
     ocene.value = response.data.ocene;
   } catch (error) {
-      toast.error(error.response.data.message || error.message);
-    }
+    toast.error(error.response.data.message || error.message);
   }
 };
 

@@ -7,7 +7,7 @@ import Predmeti from "@/views/Predmeti.vue";
 import Studenti from "@/views/Studenti.vue";
 import StudentNovi from "@/views/StudentNovi.vue";
 import StudentIzmena from "@/views/StudentIzmena.vue";
-import Student from "@/views/Student2.vue";
+import Student from "@/views/Student.vue";
 import PredmetNovi from "@/views/PredmetNovi.vue";
 import PredmetIzmena from "@/views/PredmetIzmena.vue";
 import ProductsPrimer from "@/views/ProductsPrimer.vue";

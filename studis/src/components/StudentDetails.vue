@@ -21,8 +21,7 @@ const deleteStudent = async () => {
     const response = await axios.delete(`/api/student-brisanje/${id}`);
     router.push("/studenti").then(() => toast.success(response.data.message));
   } catch (error) {
-      toast.error(error.response.data.message || error.message);
-    }
+    toast.error(error.response.data.message || error.message);
   }
 };
 

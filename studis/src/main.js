@@ -1,5 +1,3 @@
-import "./assets/main.css";
-
 import { createApp } from "vue";
 import App from "./App.vue";
 import Vue3Toastify from "vue3-toastify";
@@ -16,6 +14,18 @@ axios.interceptors.request.use(
     return config;
   },
   (error) => {
+    return Promise.reject(error);
+  }
+);
+
+axios.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response && error.response.status === 401) {
+      localStorage.removeItem("access_token");
+      localStorage.removeItem("rola");
+      router.push("/login");
+    }
     return Promise.reject(error);
   }
 );

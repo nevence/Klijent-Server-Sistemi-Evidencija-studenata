@@ -24,13 +24,7 @@ const fetchKorisnik = async () => {
     email.value = response.data.email;
     rola.value = response.data.rola;
   } catch (error) {
-    if (error.response.status == 401) {
-      router
-        .push("/login")
-        .then(() => toast.error(error.response.data.message));
-    } else {
-      toast.error(error.response.data.message || error.message);
-    }
+    toast.error(error.response.data.message || error.message);
   }
 };
 
