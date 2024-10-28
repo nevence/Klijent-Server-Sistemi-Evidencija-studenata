@@ -6,9 +6,9 @@ from flask_jwt_extended import JWTManager, create_access_token, get_jwt, jwt_req
 
 con = mysql.connector.connect(
     host='localhost',
-    port='3306',
+    port='3308',
     user='root',
-    passwd='',
+    passwd='root',
     database='evidencija_studenata'
 )
 

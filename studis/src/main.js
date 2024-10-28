@@ -18,17 +18,9 @@ axios.interceptors.request.use(
   }
 );
 
-axios.interceptors.response.use(
-  (response) => response,
-  (error) => {
-    if (error.response && error.response.status === 401) {
-      localStorage.removeItem("access_token");
-      localStorage.removeItem("rola");
-      router.push("/login");
-    }
-    return Promise.reject(error);
-  }
-);
+setInterval(() => {
+  localStorage.clear();
+}, 30 * 60 * 1000);
 
 const app = createApp(App);
 
